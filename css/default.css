@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+}
+
+/* header 영역 */
+#header {
+    width: 100%;
+    height: 90px;
+    background: white;
+    position: fixed;
+    z-index: 3;
+}
+
+.header_inner {
+    width: 1301px;
+    height: 90px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 323px;
+}
+
+.logo a {
+    width: 323px;
+    height: 90px;
+    display: block;
+    /* border: 1px solid navy; */
+    /* background: url(../img/logo.png) no-repeat; */
+    background: url(../img/바른이로고.jpg) no-repeat;
+}
+
+.nav {}
+
+.main {
+    display: flex;
+}
+
+.main>li {
+    padding-top: 45px;
+}
+
+.main>li>a {
+    display: block;
+    /* border: 1px solid red; */
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main>li:hover>a {
+    color: #2086d6;
+}
+
+.main>li:hover .sub {
+    display: block;
+}
+
+.sub {
+    display: none;
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    background: #5caae7;
+    color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.4s;
+    /* border: 1px solid darkcyan; */
+}
+
+.sub li:hover a {
+    background: #2086d6;
+}
+
+.main_img {
+    width: 100%;
+    height: 732px;
+    background: url(../img/main_metapo03.jpg) no-repeat;
+    background-position: 0 -50px;
+}
+
+/* section 영역 */
+.secion {}
+
+.section_inner {
+    width: 1301px;
+    margin: 0 auto;
+}
+
+.section_inner>h2 {
+    width: 200px;
+    /* border: 1px solid turquoise; */
+    border-bottom: 3px double #333;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.section_inner>div {
+    /* border: 1px solid darkgreen; */
+    /* height: 300px; */
+    margin-top: 60px;
+}
+
+.section_1 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left {
+    width: 32px;
+    height: 60px;
+    background: #5caae7;
+    position: absolute;
+    left: -32px;
+    top: 130px;
+    transition: all 0.3s;
+}
+
+.left:hover {
+    background: #2086d6;
+}
+
+.left a {
+    display: block;
+    background: url(../img/arrow_left.png) no-repeat;
+    /* background-position-y:-16px; */
+    width: 32px;
+    height: 60px;
+}
+
+.doctor {
+    width: 40%;
+    height: 320px;
+    background: url(../img/원장\ 이재용.jpg) no-repeat;
+    background-size: 250px 320px;
+    background-position: center bottom;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.doctor_intro {
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+    padding: 20px;
+}
+
+.doctor_intro h3 {
+    font-size: 18px;
+}
+
+.text {
+    display: inline-block;
+    font-family: 'omyu_pretty';
+}
+
+.right {
+    width: 32px;
+    height: 60px;
+    background: #5caae7;
+    position: absolute;
+    left: 1170px;
+    top: 130px;
+    transition: all 0.3s;
+}
+
+.right:hover {
+    background: #2086d6;
+}
+
+.right a {
+    display: block;
+    background: url(../img/arrow_right.png) no-repeat;
+    /* background-position-y:-16px; */
+    width: 32px;
+    height: 60px;
+}
+
+.section_2 {}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {}
+
+.list li a {
+    display: block;
+    text-align: center;
+}
+
+.list li a span {
+    display: block;
+    width: 306px;
+    height: 200px;
+    text-indent: -9999px;
+    background-size: 70%;
+    background-position: center center;
+    transition: all 0.3s;
+}
+
+.list li:nth-child(1) a span {
+    background: url(../img/banner01.jpg) no-repeat;
+    background-size: 70%;
+    background-position: center center;
+}
+
+.list li:nth-child(2) a span {
+    background: url(../img/banner02.jpg) no-repeat;
+    background-size: 70%;
+    background-position: center center;
+}
+
+.list li:nth-child(3) a span {
+    background: url(../img/banner03.jpg) no-repeat;
+    background-size: 70%;
+    background-position: center center;
+}
+
+.list li:nth-child(4) a span {
+    background: url(../img/banner04.jpg) no-repeat;
+    background-size: 70%;
+    background-position: center center;
+}
+
+.list li a h4 {
+    font-size: 20px;
+    /* border: 1px solid saddlebrown; */
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border-bottom: 3px solid #5caae7;
+    transition: all 0.3s;
+}
+
+.list li:hover a h4 {
+    background: #5caae7;
+    color: white;
+}
+
+.list li a p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.section_3 {
+    display: flex;
+    height: 200px;
+}
+
+.notice {
+    width: 50%;
+    /* border: 1px solid slateblue; */
+    padding: 20px;
+}
+
+.notice h2 {
+    color: #2086d6;
+}
+
+.notice h2 span {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    /* border: 1px solid saddlebrown; */
+    text-indent: -9999px;
+    background: url(../img/plus.png) no-repeat;
+    background-position: center center;
+    background-size: 60%;
+}
+
+.table {
+    width: 80%;
+    /* border: 1px solid darkmagenta; */
+    margin-top: 15px;
+    table-layout: fixed;
+}
+
+.table tr {
+    height: 20px;
+}
+
+.table td {}
+
+.table td.txt1 {
+    width: 55%;
+    /* border: 1px solid teal  ; */
+    padding-right: 30px;
+}
+
+.table td.txt1 a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table td.txt1 a:hover {
+    color: #5caae7;
+}
+
+.table td.txt2 {
+    width: 45%;
+    /* border: 1px solid teal  ; */
+    color: #333;
+    padding-left: 10px;
+    border-left: 1px solid #eee;
+    border-spacing: 30px;
+
+}
+
+.time {
+    width: 50%;
+    /* border: 1px solid slateblue; */
+    padding: 20px;
+}
+
+.time>h2 {
+    color: #2086d6;
+}
+
+.time>P {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.1;
+    /* border: 1px solid darkblue; */
+}
+
+.t_txt {
+    display: block;
+}
+
+.section_4 {
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_4 iframe {
+    width: 40%;
+    height: 300px;
+}
+
+.road {
+    width: 55%;
+    /* border: 1px springgreen solid; */
+}
+
+.road h2 {
+    color: #2086d6;
+}
+
+.road p {
+    font-size: 18px;
+}
+
+.road>p>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid darkred; */
+    text-indent: -9999px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.road>p>span.r1 {
+    background-image: url("../img/subway.png");
+
+}
+
+.road>p>span.r2 {
+    background-image: url("../img/car.png");
+    background-size: 70%;
+}
+
+/* footer 영역 */
+.footer {
+    width: 100%;
+    background: #eee;
+    color: #333;
+}
+
+.f_inner {
+    width: 1301px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.f_menu {
+    display: flex;
+}
+
+.f_menu li {}
+
+.f_menu li a {
+    display: block;
+    border-right: 1px solid #333;
+    padding: 0 10px;
+}
+
+.f_menu li:nth-child(5) a {
+    border-right: none;
+}
+
+.f_menu li:hover a {
+    color: #2086d6;
+}
+
+.f_middle {
+    margin: 20px 0;
+    display: flex;
+}
+
+.f_middle h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.f_middle p {
+    font-size: 16px;
+}
+
+.f_left {
+    width: 25%;
+    /* border: 1px solid saddlebrown; */
+}
+
+.f_right {
+    width: 30%;
+}
+
+.f_copy {
+    font-size: 14px;
+}
+
+.fix{}
+.fix > div{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    /* background: #2086d6; */
+    background: #5caae7;
+    transition: all 0.2s;
+    overflow: hidden;
+    color: white;
+    /* transition: all 0.5s; */
+    position: fixed;
+}
+.fix > div:hover{
+    width: 170px;
+}
+.fix > div:hover .b2{
+    opacity: 1;
+
+}
+.fix > div > a{
+    display: block;
+    text-align: center; 
+}
+
+
+
+
+
+
+
+
+.b1{
+    display:inline-block;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 50px;
+    height: 70px;
+}
+.blog{
+    left: 30px;
+    top: 300px;
+}
+.blog > a > .b1{
+    background-image: url(../img/blog.png);  
+}
+.insta{
+    left: 30px;
+    top: 400px;
+}
+.insta > a > .b1{
+    background-image: url(../img/insta.png);  
+}
+.talk{
+    left: 30px;
+    top: 500px;
+}
+.talk > a > .b1{
+    background-image: url(../img/talk.png);  
+}
+.b2{
+    opacity: 0;
+    transition: all 0.5s;
+    padding-left: 15px;
+}
+
+
